@@ -24,11 +24,11 @@ response.setContentType("text/html");
 PrintWriter out = response.getWriter();
 if ("admin".equals(user) && "1234".equals(pass)) 
 {
-out.println("<h2>Welcome, " + user + "!</h2>");
+System.out.println("<h2>Welcome, " + user + "!</h2>");
  } 
 else 
 {
- out.println("<h2>Login Failed. Invalid credentials.</h2>");
+System.out.println("<h2>Login Failed. Invalid credentials.</h2>");
     }
   }
 }
